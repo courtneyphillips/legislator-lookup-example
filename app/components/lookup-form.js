@@ -4,9 +4,9 @@ export default Ember.Component.extend({
   actions: {
     zipLookup() {
       var params = {
-        zipcode: this.get('zip')
+        zip: this.get('zip')
       };
-      this.sendAction('zipLookup', params)
+      this.sendAction('zipLookup', params);
     }
   }
 });
